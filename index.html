@@ -2045,6 +2045,70 @@ section > *:last-child{
   }
 }
 
+
+/* SEÇÃO 02 — caderno editorial inspirado na referência */
+.services-notebook{
+  background:var(--cream)!important;color:var(--ink)!important;
+  padding:84px 5vw 105px!important;border-bottom:2px solid var(--ink);
+}
+.services-notebook .section-id{border-color:var(--ink)!important}
+.notebook-shell{
+  position:relative;width:min(940px,92vw);margin:92px auto 0;padding-top:34px;
+}
+.notebook-page{
+  position:relative;background:var(--red);border:2px solid var(--ink);
+  box-shadow:12px 14px 0 var(--ink);overflow:visible;
+}
+.notebook-rings{
+  position:absolute;z-index:5;left:5%;right:5%;top:0;
+  display:flex;justify-content:space-between;pointer-events:none;
+}
+.notebook-rings span{
+  position:relative;display:block;width:54px;height:88px;
+  border:12px solid var(--pink);border-bottom:0;border-radius:32px 32px 0 0;
+}
+.notebook-rings span:after{
+  content:"";position:absolute;width:22px;height:22px;border-radius:50%;
+  background:var(--ink);left:4px;bottom:-11px;
+}
+.notebook-title{
+  padding:92px 4.2% 34px;font-family:"Archivo Black",sans-serif;
+  font-size:clamp(72px,10vw,148px);line-height:.78;letter-spacing:-.075em;
+  text-transform:uppercase;
+}
+.services-notebook .service-list{border-top:2px solid var(--ink)!important}
+.services-notebook .service-row{
+  display:grid!important;grid-template-columns:120px 1fr!important;gap:0!important;
+  align-items:center!important;min-height:98px!important;padding:0!important;
+  border-bottom:2px solid var(--ink)!important;color:var(--ink)!important;
+  text-decoration:none!important;background:transparent!important;transition:.18s ease!important;
+}
+.services-notebook .service-row:last-child{border-bottom:0!important}
+.services-notebook .service-row:hover{
+  padding-left:0!important;background:var(--yellow)!important;color:var(--ink)!important;
+}
+.services-notebook .notebook-star{
+  height:100%;display:grid;place-items:center;border-right:2px solid var(--ink);
+  font-family:"Archivo Black",sans-serif;font-size:58px;line-height:1;
+}
+.services-notebook .service-row h3{
+  margin:0!important;padding:14px 30px;font-family:"Archivo Black",sans-serif;
+  font-size:clamp(31px,4.2vw,57px)!important;line-height:1!important;
+  letter-spacing:-.045em;text-transform:uppercase;
+}
+@media(max-width:700px){
+ .services-notebook{padding:70px 18px 82px!important}
+ .notebook-shell{width:100%;margin-top:66px;padding-top:25px}
+ .notebook-page{box-shadow:7px 8px 0 var(--ink)}
+ .notebook-rings{left:5%;right:5%}
+ .notebook-rings span{width:29px;height:58px;border-width:7px}
+ .notebook-rings span:after{width:13px;height:13px;left:1px;bottom:-7px}
+ .notebook-title{padding:61px 5% 25px;font-size:clamp(53px,17vw,92px);line-height:.8}
+ .services-notebook .service-row{grid-template-columns:66px 1fr!important;min-height:74px!important}
+ .services-notebook .notebook-star{font-size:39px}
+ .services-notebook .service-row h3{padding:12px 18px;font-size:clamp(25px,8.2vw,42px)!important}
+}
+
 </style>
 </head>
 <body>
@@ -2086,15 +2150,20 @@ section > *:last-child{
  </div>
 </section>
 
-<section class="services" id="servicos">
+<section class="services services-notebook" id="servicos">
  <div class="section-id">02 / o que a gente apronta</div>
- <div class="services-head"><h2>FAZEMOS<br>TRECOS.</h2><p>Da ideia torta ao negócio que precisa ganhar forma. A gente pensa, mistura, testa e coloca no mundo.</p></div>
- <div class="service-list">
-  <a class="service-row" href="treco-servico-identidade.html" target="_blank" rel="noopener"><span class="num">01</span><h3>Identidade</h3><p>Marcas, universos visuais e sistemas que têm alguma coisa para dizer.</p><span class="arr">↗</span></a>
-  <a class="service-row" href="treco-servico-conteudo.html" target="_blank" rel="noopener"><span class="num">02</span><h3>Conteúdo</h3><p>Ideias e formatos para marcas que não querem soar como todo mundo.</p><span class="arr">↗</span></a>
-  <a class="service-row" href="treco-servico-design.html" target="_blank" rel="noopener"><span class="num">03</span><h3>Design</h3><p>Peças, campanhas e objetos visuais pensados para existir de verdade.</p><span class="arr">↗</span></a>
-  <a class="service-row" href="treco-servico-audiovisual.html" target="_blank" rel="noopener"><span class="num">04</span><h3>Audiovisual</h3><p>Filmmaking, direção criativa e histórias que ganham imagem e movimento.</p><span class="arr">↗</span></a>
-  <a class="service-row" href="treco-servico-eventos.html" target="_blank" rel="noopener"><span class="num">05</span><h3>Eventos</h3><p>Experiências, ativações e ideias que saem da tela.</p><span class="arr">↗</span></a>
+ <div class="notebook-shell">
+  <div class="notebook-rings" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+  <div class="notebook-page">
+   <div class="notebook-title">FAZEMOS<br>TRECOS.</div>
+   <div class="service-list">
+    <a class="service-row" href="treco-servico-identidade.html" target="_blank" rel="noopener"><span class="notebook-star">*</span><h3>Identidade</h3></a>
+    <a class="service-row" href="treco-servico-conteudo.html" target="_blank" rel="noopener"><span class="notebook-star">*</span><h3>Conteúdo</h3></a>
+    <a class="service-row" href="treco-servico-design.html" target="_blank" rel="noopener"><span class="notebook-star">*</span><h3>Design</h3></a>
+    <a class="service-row" href="treco-servico-audiovisual.html" target="_blank" rel="noopener"><span class="notebook-star">*</span><h3>Audiovisual</h3></a>
+    <a class="service-row" href="treco-servico-eventos.html" target="_blank" rel="noopener"><span class="notebook-star">*</span><h3>Eventos</h3></a>
+   </div>
+  </div>
  </div>
 </section>
 
