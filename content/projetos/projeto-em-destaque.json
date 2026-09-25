@@ -1,11 +1,11 @@
 {
-  "title": "Projeto em destaque",
-  "client": "",
-  "category": "identidade / conteúdo",
-  "year": "2026",
   "excerpt": "Espaço preparado para receber capa, cliente, categoria e descrição do projeto.",
+  "body": "Adicione o conteúdo completo deste case pelo painel administrativo.",
+  "client": "",
   "published": true,
-  "cover": "",
   "gallery": [],
-  "body": "Adicione o conteúdo completo deste case pelo painel administrativo."
+  "cover": "",
+  "title": "Um treco",
+  "year": "2026",
+  "category": "identidade / conteúdo"
 }
