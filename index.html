@@ -2109,6 +2109,56 @@ section > *:last-child{
  .services-notebook .service-row h3{padding:12px 18px;font-size:clamp(25px,8.2vw,42px)!important}
 }
 
+
+/* SEÇÃO 01 — composição tipográfica editorial */
+.manifesto-poster{
+  min-height:0!important;background:var(--cream)!important;
+  padding:82px 5vw 100px!important;border-bottom:2px solid var(--ink);
+}
+.manifesto-poster .section-id{border-color:var(--ink)}
+.about-poster{
+  width:min(1180px,94vw);margin:58px auto 0;display:flex;flex-direction:column;align-items:center;
+}
+.about-title{
+  position:relative;z-index:3;margin:0;width:max-content;max-width:100%;
+  display:flex;flex-direction:column;align-items:center;
+  font-family:"Archivo Black",sans-serif;font-size:clamp(74px,11.6vw,174px);
+  line-height:.72;letter-spacing:-.075em;text-transform:uppercase;color:var(--ink);
+}
+.about-title span{
+  position:relative;display:block;padding:.08em .14em .11em;
+}
+.about-title span:before{
+  content:"";position:absolute;z-index:-1;inset:-.02em -.09em -.03em;
+  background:var(--pink);border:3px solid var(--ink);border-radius:.22em .28em .2em .25em;
+}
+.about-title span:first-child{transform:rotate(-.7deg)}
+.about-title span:last-child{margin-top:-.04em;transform:rotate(.4deg)}
+.about-eyes{
+  position:relative;z-index:4;margin-top:15px;width:min(1120px,96%);
+  background:var(--yellow);border:3px solid var(--ink);box-shadow:12px 13px 0 var(--ink);
+  padding:.04em .16em .12em;text-align:center;
+  font-family:"Libre Caslon Display",serif;font-style:italic;
+  font-size:clamp(48px,7vw,105px);line-height:1;letter-spacing:-.045em;
+  transform:rotate(-1.7deg);
+}
+.about-copy{
+  position:relative;z-index:2;margin-top:43px;width:min(1030px,90%);
+  background:#28b96d;border:3px solid var(--ink);box-shadow:13px 14px 0 var(--ink);
+  padding:30px 48px;text-align:center;
+  font-family:"DM Mono",monospace;font-size:clamp(17px,2vw,27px);
+  line-height:1.48;letter-spacing:-.025em;
+}
+@media(max-width:700px){
+ .manifesto-poster{padding:68px 18px 82px!important}
+ .about-poster{width:100%;margin-top:42px}
+ .about-title{font-size:clamp(55px,18vw,100px);line-height:.76}
+ .about-title span{padding:.1em .1em .13em}
+ .about-title span:before{border-width:2px}
+ .about-eyes{width:96%;margin-top:11px;border-width:2px;box-shadow:7px 8px 0 var(--ink);font-size:clamp(37px,11vw,65px);padding:.09em .12em .16em}
+ .about-copy{width:91%;margin-top:31px;border-width:2px;box-shadow:7px 8px 0 var(--ink);padding:23px 20px;font-size:15px;line-height:1.55}
+}
+
 </style>
 </head>
 <body>
@@ -2138,15 +2188,12 @@ section > *:last-child{
   </div>
 </div>
 
-<section class="manifesto" id="sobre">
+<section class="manifesto manifesto-poster" id="sobre">
  <div class="section-id">01 / sobre esse treco</div>
- <div class="manifesto-grid">
-</div>
-  <div class="manifesto-copy">
-   <h2 class="vision-title"><span class="vision-main">PARA VER O MUNDO</span><span class="vision-alt">COM OUTROS OLHOS.</span></h2>
-   <div class="statement">A Treco existe pra fazer uma bagunça organizada! Nós testamos, inventamos, misturamos e fazemos acontecer.</div>
-   <div class="sticker">não é agência. é lab.</div>
-  </div>
+ <div class="about-poster">
+  <h2 class="about-title"><span>PARA VER</span><span>O MUNDO</span></h2>
+  <div class="about-eyes">COM OUTROS OLHOS.</div>
+  <div class="about-copy">A treco&amp;etc existe para transformar ideias guardadas dentro da gaveta em coisas com valor de verdade. Nós experimentamos, testamos, inventamos, misturamos e, principalmente, fazemos acontecer aquilo que você não sabe como pôr em prática.</div>
  </div>
 </section>
 
