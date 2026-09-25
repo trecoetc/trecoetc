@@ -1,0 +1,55 @@
+backend:
+  name: turbo-github
+  turbo_site_id: SUBSTITUIR_PELO_TURBO_SITE_ID
+  branch: main
+
+media_folder: "uploads"
+public_folder: "/uploads"
+
+slug:
+  encoding: "ascii"
+  clean_accents: true
+
+collections:
+  - name: "artigos"
+    label: "Arquivo aberto"
+    label_singular: "Artigo"
+    folder: "content/artigos"
+    create: true
+    delete: true
+    extension: "json"
+    format: "json"
+    slug: "{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Categoria", name: "category", widget: "string" }
+      - { label: "Número", name: "number", widget: "string", hint: "Ex.: 005" }
+      - { label: "Resumo", name: "excerpt", widget: "text" }
+      - { label: "Data", name: "date", widget: "datetime" }
+      - { label: "Publicado", name: "published", widget: "boolean", default: true }
+      - { label: "Imagem de capa", name: "cover", widget: "image", required: false }
+      - { label: "Conteúdo", name: "body", widget: "markdown" }
+
+  - name: "projetos"
+    label: "Treco que já fizemos"
+    label_singular: "Projeto"
+    folder: "content/projetos"
+    create: true
+    delete: true
+    extension: "json"
+    format: "json"
+    slug: "{{slug}}"
+    fields:
+      - { label: "Nome do projeto", name: "title", widget: "string" }
+      - { label: "Cliente", name: "client", widget: "string", required: false }
+      - { label: "Categoria", name: "category", widget: "string" }
+      - { label: "Ano", name: "year", widget: "string" }
+      - { label: "Descrição curta", name: "excerpt", widget: "text" }
+      - { label: "Publicado", name: "published", widget: "boolean", default: true }
+      - { label: "Capa", name: "cover", widget: "image", required: false }
+      - label: "Galeria"
+        name: "gallery"
+        widget: "list"
+        required: false
+        field: { label: "Imagem", name: "image", widget: "image" }
+      - { label: "Conteúdo / case", name: "body", widget: "markdown" }
