@@ -2197,6 +2197,13 @@ section > *:last-child{
   background:white!important;
 }
 
+
+/* Seção 04 — boxes clicáveis */
+.notes .note{color:var(--ink)!important;text-decoration:none!important;cursor:pointer;transition:transform .18s ease,box-shadow .18s ease}
+.notes .note:visited{color:var(--ink)!important}
+.notes .note:hover{box-shadow:12px 13px 0 var(--ink)}
+.notes .note:focus-visible{outline:3px solid var(--yellow);outline-offset:5px}
+
 </style>
 </head>
 <body>
@@ -2269,10 +2276,10 @@ section > *:last-child{
   <label for="busca">procurar um treco →</label><input id="busca" type="search" placeholder="digite aqui"><button type="submit">BUSCAR</button>
  </form>
  <div class="notes">
-  <article class="note"><small>pensamento / 001</small><h3>Ideias não precisam nascer prontas.</h3><p>Este espaço vira o arquivo editorial da Treco: textos, referências, processos, provocações e bastidores.</p></article>
-  <article class="note"><small>processo / 002</small><h3>Bagunça também pode ter método.</h3><p>Conteúdo novo entra aqui como publicação, sem precisar reconstruir a página.</p></article>
-  <article class="note"><small>cultura / 003</small><h3>Coisas que a gente viu e não esqueceu.</h3><p>Um arquivo vivo para alimentar a identidade e o repertório da não-agência.</p></article>
-  <article class="note"><small>etc. / 004</small><h3>E tudo aquilo que não coube numa categoria.</h3><p>Porque o “etc.” também faz parte do nome.</p></article>
+  <a class="note" href="treco-artigo-ideias-nao-precisam-nascer-prontas.html" target="_blank" rel="noopener"><small>pensamento / 001</small><h3>Ideias não precisam nascer prontas.</h3><p>Este espaço vira o arquivo editorial da Treco: textos, referências, processos, provocações e bastidores.</p></a>
+  <a class="note" href="treco-artigo-bagunca-tambem-pode-ter-metodo.html" target="_blank" rel="noopener"><small>processo / 002</small><h3>Bagunça também pode ter método.</h3><p>Conteúdo novo entra aqui como publicação, sem precisar reconstruir a página.</p></a>
+  <a class="note" href="treco-artigo-coisas-que-a-gente-viu.html" target="_blank" rel="noopener"><small>cultura / 003</small><h3>Coisas que a gente viu e não esqueceu.</h3><p>Um arquivo vivo para alimentar a identidade e o repertório da não-agência.</p></a>
+  <a class="note" href="treco-artigo-etc.html" target="_blank" rel="noopener"><small>etc. / 004</small><h3>E tudo aquilo que não coube numa categoria.</h3><p>Porque o “etc.” também faz parte do nome.</p></a>
  </div>
 </section>
 
