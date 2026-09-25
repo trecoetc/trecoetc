@@ -2159,6 +2159,28 @@ section > *:last-child{
  .about-copy{width:91%;margin-top:31px;border-width:2px;box-shadow:7px 8px 0 var(--ink);padding:23px 20px;font-size:15px;line-height:1.55}
 }
 
+
+/* Ajuste Seção 01 — título em uma única linha */
+.about-title{
+  width:100%!important;
+  display:block!important;
+  text-align:center!important;
+  white-space:nowrap!important;
+  font-size:clamp(52px,9.5vw,145px)!important;
+  line-height:.82!important;
+}
+.about-title span{
+  display:inline-block!important;
+  margin:0!important;
+  padding:.08em .13em .12em!important;
+  transform:rotate(-.5deg)!important;
+  white-space:nowrap!important;
+}
+@media(max-width:700px){
+ .about-title{font-size:clamp(31px,10.2vw,70px)!important}
+ .about-title span{padding:.11em .08em .14em!important}
+}
+
 </style>
 </head>
 <body>
@@ -2191,7 +2213,7 @@ section > *:last-child{
 <section class="manifesto manifesto-poster" id="sobre">
  <div class="section-id">01 / sobre esse treco</div>
  <div class="about-poster">
-  <h2 class="about-title"><span>PARA VER</span><span>O MUNDO</span></h2>
+  <h2 class="about-title"><span>PARA VER O MUNDO</span></h2>
   <div class="about-eyes">COM OUTROS OLHOS.</div>
   <div class="about-copy">A treco&amp;etc existe para transformar ideias guardadas dentro da gaveta em coisas com valor de verdade. Nós experimentamos, testamos, inventamos, misturamos e, principalmente, fazemos acontecer aquilo que você não sabe como pôr em prática.</div>
  </div>
